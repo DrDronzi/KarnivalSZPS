@@ -9,17 +9,17 @@ const int chaseStripPins[NUM_CHASE_STRIPS] = {2, 3, 4, 5, 6, 7};
 const int staticStripPins[NUM_STATIC_STRIPS] = {8, 9};
 
 Adafruit_NeoPixel chaseStrips[NUM_CHASE_STRIPS] = {
-    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[0], NEO_GRB + NEO_KHZ800),
-    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[1], NEO_GRB + NEO_KHZ800),
-    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[2], NEO_GRB + NEO_KHZ800),
-    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[3], NEO_GRB + NEO_KHZ800),
-    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[4], NEO_GRB + NEO_KHZ800),
-    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[5], NEO_GRB + NEO_KHZ800)
+    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[0], NEO_RGB + NEO_KHZ800),
+    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[1], NEO_RGB + NEO_KHZ800),
+    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[2], NEO_RGB + NEO_KHZ800),
+    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[3], NEO_RGB + NEO_KHZ800),
+    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[4], NEO_RGB + NEO_KHZ800),
+    Adafruit_NeoPixel(NUM_LEDS_PER_CHASE_STRIP, chaseStripPins[5], NEO_RGB + NEO_KHZ800)
 };
 
 Adafruit_NeoPixel staticStrips[NUM_STATIC_STRIPS] = {
-    Adafruit_NeoPixel(NUM_LEDS_PER_STATIC_STRIP, staticStripPins[0], NEO_GRB + NEO_KHZ800),
-    Adafruit_NeoPixel(NUM_LEDS_PER_STATIC_STRIP, staticStripPins[1], NEO_GRB + NEO_KHZ800)
+    Adafruit_NeoPixel(NUM_LEDS_PER_STATIC_STRIP, staticStripPins[0], NEO_RGB + NEO_KHZ800),
+    Adafruit_NeoPixel(NUM_LEDS_PER_STATIC_STRIP, staticStripPins[1], NEO_RGB + NEO_KHZ800)
 };
 
 void setup() {

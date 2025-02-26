@@ -9,8 +9,8 @@
 #define PIN_STRIP3 4
 
 Adafruit_NeoPixel strip1 = Adafruit_NeoPixel(NUM_LEDS_STRIP1, PIN_STRIP1, NEO_RGB + NEO_KHZ800);
-Adafruit_NeoPixel strip2 = Adafruit_NeoPixel(NUM_LEDS_STRIP2, PIN_STRIP2, NEO_RGB + NEO_KHZ800);
-Adafruit_NeoPixel strip3 = Adafruit_NeoPixel(NUM_LEDS_STRIP3, PIN_STRIP3, NEO_RGB + NEO_KHZ800);
+Adafruit_NeoPixel strip2 = Adafruit_NeoPixel(NUM_LEDS_STRIP2, PIN_STRIP2, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip3 = Adafruit_NeoPixel(NUM_LEDS_STRIP3, PIN_STRIP3, NEO_BGR + NEO_KHZ800);
 
 void setup() {
   strip1.begin();
@@ -22,8 +22,8 @@ void setup() {
   strip3.show();
   
   setStaticColour(strip1, strip1.Color(220, 19, 223));
-  setStaticColour(strip2, strip2.Color(220, 19, 223));
-  setStaticColour(strip3, strip3.Color(255, 250, 139));
+  setStaticColour(strip2, strip2.Color(19, 220, 223));
+  setStaticColour(strip3, strip3.Color(139, 250, 255));
 }
 
 void loop() {
